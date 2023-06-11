@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <style>
+    html {
+      zoom: 0.80;
+    }
+
+    body {
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+
+  </style>
+
+  <div id="htmlData" style="padding: 5mm 15mm 5mm 15mm; margin-top: -100px; max-width: 800px; margin: auto; ">
+    <div class="row">
+      <table style="border-spacing: 0; border-collapse: collapse; border: hidden; margin-bottom: 50px">
+        <tbody style="width: 1000px">
+
+          <tr>
+            <td>
+              <img style="width: 150px; display: block; " src="https://firebasestorage.googleapis.com/v0/b/av-calculator-d5eef.appspot.com/o/av-logo.png?alt=media&token=a123aab5-317d-4f6c-95d0-03c0cef01e9e&_gl=1*176eolr*_ga*MTUwNTY0NDIwNi4xNjg1MzQ0MTEx*_ga_CW55HF8NVT*MTY4NjQyMDQ3My4zLjEuMTY4NjQyMDUxNS4wLjAuMA.."alt="av logo">
+              <p style="display: block; text-align:end;" ><%= data.date %></p>
+            </td>
+          </tr>
+
+          <tr style="width: 100%;" >
+            <td style="width: 100%; text-align: justify; line-height: 20px; padding: 10px 0;">CONTRATO DE PRESTACION DE SERVICIOS PROFESIONALES QUE CELEBRAN POR UNA PARTE EL 
+              C. <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" ><%= data.name %></span> QUE EN LO SUCESIVO SE LE DENOMINARA PARTE CONTRATANTE 
+              Y DE LA OTRA <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" >REPRESENTADA EN ESTE ACTO POR SANCHEZ SALGADO ANTONIO</span> EN LO SUCESIVO 
+              DENOMINADO PRESTADOR DE SERVICIOS.</td>
+          </tr>
+          
+          <tr>
+            <td><p style="text-align: center; font-weight: 700; font-family: 'Open Sans', sans-serif;" " >C L A U S U L A S</p></td>
+          </tr>
+
+          <tr  >
+            <td style="width: 100%; text-align: justify; line-height: 20px; padding: 10px 0;">
+              <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" >PRIMERO.</span> DECLARA Y RATIFICA EN ESTE ACTO LA PARTE CONTRATANTE QUE ACEPTA LA APLICACIÓN 
+              DE SU CREDITO INFONAVIT CORRESIDENCIAL PARA COMPRAR EL INMUEBLE QUE SE ASIGNO, 
+              ASI MISMO DA AUTORIZACION DE LA POSESION, ADMINISTRACION Y PROMOCION DE VENTA DE DICHA 
+              PROPIEDAD AL PRESTADOR DE SERVICIOS.
+            </td>
+          </tr>
+
+          <tr  >
+            <td style="width: 100%; text-align: justify; line-height: 20px; padding: 10px 0;">
+              <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" >SEGUNDO.</span> EL PRECIO PACTADO ENTRE LAS PARTES ES LA CANTIDAD DE 
+              <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" > $ <%= data.total %> ( <%= data.total_letra %> M.N. MONEDA NACIONAL) </span> 
+              MONTO TOTAL DE LA SUBCUENTA DE VIVIENDA DE INFONAVIT A RECUPERAR POR MEDIO DE LA VENTA DE LA 
+              PROPIEDAD QUE SE ASIGNO PARA TAL FIN EN UN PERIODO DE 6 A 8 MESES.
+            </td>
+          </tr>
+
+          <tr  >
+            <td style="width: 100%; text-align: justify; line-height: 20px; padding: 10px 0;">
+              <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" >TERCERA.</span>  POR CONCEPTO DE HONORARIOS POR MUTUO ACUERDO SERA LA CANTIDAD 
+              <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" > $ <%= data.honorarios_cantidad %> (<%= data.honorarios_letra %> M.N. MONEDA NACIONAL) </span> 
+              DICHOS HONORARIOS CUBRIRAN LOS GASTOS GENERADOS PARA LA COMPRA Y POSTERIOR VENTA DEL INMUEBLE EN MENCION.
+            </td>
+          </tr>
+
+          <tr  >
+            <td style="width: 100%; text-align: justify; line-height: 20px; padding: 10px 0;">
+                <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" >CUARTA.</span> EN CASO DE QUE EL CONTRATANTE DECIDIERA NO CONTINUAR O CANCELAR LA PRESTACION DE 
+                SERVICIOS <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" > ANTES DE LA COMPRA DEL INMUEBLE </span> SE OBLIGA A REALIZAR EL PAGO 
+                <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" > $ <%= data.honorarios_cantidad %> (<%= data.honorarios_letra %> M.N. MONEDA NACIONAL) </span> 
+                POR CONCEPTO DE GASTOS ADMINISTRATIVOS DE LA COMPRAVENTA.
+            </td>
+          </tr>
+
+          <tr  >
+            <td style="width: 100%; text-align: justify; line-height: 20px; padding: 10px 0;">
+              <span style="font-weight: 700; font-family: 'Open Sans', sans-serif;" >FINALMENTE</span>, AMBAS PARTES FIRMAN DE CONFORMIDAD DECLARANDO NO EXISTIR DOLO, MALA FE O VICIOS OCULTOS.
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="width: 100%; padding-top: 50px; position:relative " >
+
+              <p style="width: 30%; border-top: 1px solid black; position: relative; text-align: center; display: block;" >
+                <span style="font-weight: 700; font-family: 'Open Sans', sans-serif; padding-top: 10px; display: block; text-align: center; " >CONTRATANTE</span>
+              </p>
+
+              <p style="width: 30%; border-top: 1px solid black; position: absolute; display:block; top:50px; left:445px;" >
+                <span style="font-weight: 700; font-family: 'Open Sans', sans-serif; position: absolute; top: -60%; left: -15%; " >LIC.</span>
+                <span style="font-weight: 700; font-family: 'Open Sans', sans-serif; padding-top: 10px; display: block; text-align: center; " >REPRESENTANTE LEGAL</span>
+              </p>
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</body>
+
+</html>
