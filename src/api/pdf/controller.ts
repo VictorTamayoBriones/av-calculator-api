@@ -4,13 +4,7 @@ import * as service from "./service";
 async function getPDFLinkController(req: express.Request, res: express.Response) {
     try {
         const data = req.body.data;
-        await service.generateOfferPDF(data)
-        .then((response) => {
-            res.send(response)
-        })
-        .catch((error) => {
-            throw new Error(error)
-        })
+        res.send( await service.generateOfferPDF(data))
     } catch (error) {
         res.status(error.code).send(error);
     }
