@@ -6,12 +6,7 @@ async function getPDFLinkController(req: express.Request, res: express.Response)
         const data = req.body.data;
         await service.generateOfferPDF(data)
         .then((response) => {
-            res.send({
-                code: 200,
-                message: 'Contrato generado correctamente',
-                file: response,
-                data: response
-            })
+            res.send(response)
         })
         .catch((error) => {
             throw new Error(error)
