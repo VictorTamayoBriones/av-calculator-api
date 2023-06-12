@@ -9,6 +9,7 @@ async function getPDFLinkController(req: express.Request, res: express.Response)
             res.send({
                 code: 200,
                 message: 'Contrato generado correctamente',
+                file: response,
                 data: response
             })
         })
