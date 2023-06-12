@@ -12,7 +12,7 @@ async function generateOfferPDF(data: any) {
         let htmlToRender = await ejs.renderFile("src/api/pdf/templates/offer-template.ejs", {data})
 
         let pdfResponse = await generatePDF(htmlToRender)
-        console.log("pdfResponse: ", pdfResponse)
+        
         return pdfResponse
 
 
